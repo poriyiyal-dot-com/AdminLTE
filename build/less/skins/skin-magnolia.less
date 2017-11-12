@@ -1,0 +1,189 @@
+/*
+ * Skin: Green
+ * -----------
+ */
+ @import "../../bootstrap-less/mixins.less";
+ @import "../../bootstrap-less/variables.less";
+ @import "../../bootstrap-less/mixins/buttons.less";
+ @import "../variables.less";
+ @import "../mixins.less";
+ 
+ .skin-magnolia {
+    .breadcrumb {
+      background-color: #FCFDF8;
+      margin-bottom: auto;
+      padding-left: 0px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.16875rem;
+    }
+    
+   //Navbar
+   .main-header {
+     .navbar {
+       .navbar-variant(@mg-navbar; @black; @mg-hover; @mg-navbar);
+       .navbar-header {
+          display: block;
+          float: none;
+       }      
+       .nav > li > a {
+         letter-spacing: 0.16875rem;
+         text-transform: uppercase;
+       }
+
+       .navbar-brand {
+        color: black;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+       }
+
+       .sidebar-toggle {
+         color: #fff;
+         &:hover {
+           background-color: darken(@green, 5%);
+         }
+       }
+       .dropdown-menu {
+          background: @mg-navbar;
+          li {
+            &.divider {
+              background-color: @mg-divider;
+            }
+            a {
+              text-transform: uppercase;
+              font-size: 12px;
+              letter-spacing: 0.16875rem;
+              text-transform: uppercase;
+              color: @black;
+              &:hover {
+                background: @mg-navbar;
+                color: @mg-hover;
+              }
+            }
+          }
+       }
+     }
+     //Logo
+     .logo {
+       .logo-variant(darken(@black, 5%));
+     }
+ 
+     li.user-header {
+       background-color: @green;
+     }
+   }
+   
+   //Content Header
+   .content-header {
+     background: transparent;
+   }
+ 
+   //Create the sidebar skin
+   .skin-dark-sidebar(@green);
+ 
+   .btn {
+    .button-variant(@white;@mg-button;@mg-navbar);
+    letter-spacing: 0.16875rem;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-color: @mg-button;
+    
+    > .btn-primary {
+      background-color: @mg-button;
+      border-color: @mg-button;
+    }
+   }
+
+   .box {
+      &.box-primary,
+      &.box-widget {
+        border-top: 3px solid #65791d;
+        padding-top: 10px;
+        box-shadow: 0 1px 1px rgba(101, 121, 29, .25);
+      }
+
+      &.box-widget {
+        padding-top: 0px;
+        > .widget-user-header {
+          height: auto !important;
+         }
+      }
+
+      > .box-header,
+      > .box-footer {
+        padding: 20px;
+
+        > .box-comments {
+          padding: 0px;
+        }
+      }
+  
+      > .box-body {
+          padding: 20px;
+
+          &.box-profile {
+            padding-top: 0px;
+          }
+      }
+   }
+
+   .form-control,
+   .input-group .input-group-addon {
+    border-color: #CDD3B5;
+   }
+
+  label, .dataTables_info, .paginate_button {
+    letter-spacing: 0.16875rem;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .pagination {  
+    > li {
+      > a,
+      > span {
+        color: @black;
+        background-color: @pagination-bg;
+        border: 1px solid @pagination-border;
+      }
+    }
+  
+    > li > a,
+    > li > span {
+      &:hover,
+      &:focus {
+        color: @white;
+        background-color: @mg-hover;
+        border-color: @mg-hover;
+      }
+    }
+  
+    > .active > a,
+    > .active > span {
+      &,
+      &:hover,
+      &:focus {
+        color: @white;
+        background-color: @mg-button;
+        border-color: @mg-button;
+      }
+    }
+  
+    > .disabled {
+      > span,
+      > span:hover,
+      > span:focus,
+      > a,
+      > a:hover,
+      > a:focus {
+        color: @pagination-disabled-color;
+        background-color: @pagination-disabled-bg;
+        border-color: @pagination-disabled-border;
+        cursor: @cursor-disabled;
+      }
+    }
+  }
+ }
+ 

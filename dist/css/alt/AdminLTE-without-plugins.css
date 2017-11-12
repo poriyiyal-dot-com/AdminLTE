@@ -18,8 +18,14 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  background: #FCFDF8;
+  color: #222;
+  cursor: auto;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -46,7 +52,7 @@ body {
   position: relative;
 }
 .layout-boxed {
-  background: url('../img/boxed-bg.jpg') repeat fixed;
+  background: url('../../img/boxed-bg.jpg') repeat fixed;
 }
 /*
  * Content Wrapper - contains the main content
@@ -158,7 +164,15 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  color: #31444e;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  letter-spacing: 0.17563rem;
 }
 /* General Links */
 a {
