@@ -9,6 +9,9 @@
  @import "../mixins.less";
  
  .skin-magnolia {
+    .wrapper {
+      background-color: none;
+    }
     .breadcrumb {
       background-color: #FCFDF8;
       margin-bottom: auto;
@@ -93,6 +96,27 @@
     > .btn-primary {
       background-color: @mg-button;
       border-color: @mg-button;
+    }
+
+    > .btn-social {
+      position: relative;
+      padding-left: 44px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    > .btn-facebook {
+      color: #ffa;
+      background-color: #3b5998;
+      border-color: rgba(0, 0, 0, 0.2);
+    }
+  
+    > .btn-google {
+      color: #fff;
+      background-color: #dd4b39;
+      border-color: rgba(0, 0, 0, 0.2);
     }
    }
 
