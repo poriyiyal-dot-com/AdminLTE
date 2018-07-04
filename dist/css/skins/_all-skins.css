@@ -1818,10 +1818,6 @@
   color: #658536;
   background: #eee6d9;
 }
-.skin-magnolia .main-header .navbar .navbar-header {
-  display: block;
-  float: none;
-}
 .skin-magnolia .main-header .navbar .nav > li > a {
   letter-spacing: 0.16875rem;
   text-transform: uppercase;
